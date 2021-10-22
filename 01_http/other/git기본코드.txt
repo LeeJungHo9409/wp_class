@@ -6,12 +6,25 @@ git config --global user.email ~~
 - git 처음 만들때 쓰일 계정 만드다 보면됨.
 
 git clone [원격 저장소 주소]
+- 내 pc 저장소와 gitHub 서버 저장소를 연결시켜준다.
+
+git pull [저장소명] [branch명]
+- 내 pc 저장소와 gitHub 서버 저장소를 병합해준다.
+	※ 안될시 --allow-unrelated-histories
+		폴더명을 바꾸거나 폴더위치를 바꿀경우...
 
 git remote add [저장소명] [git 주소(원격 저장소 주소)]
 - 원격저장소랑 연결시킴
 
 git add *
-- 데이터를 저장시킴
+- gitHub에 저장할 데이터를 'Stage' 라는 공간에 추가시킨다.
+
+git status
+- Stage에 저장된 정보를 볼 수 있게 해줌.
 
 git commit -m '~~'
-- 
+- Stage에 추가적인 정보를 덧붙인다.
+
+git push [저장소명] [branch명]
+- Stage에 저장되 내용을 gitHub에 등록시킨다.
+

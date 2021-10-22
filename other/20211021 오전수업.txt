@@ -1,0 +1,13 @@
+신입 / 3년차 차이 => 기능이 있는지 없는지...
+
+HTML,	CSS, 	JavaScript
+(뼈대)  (인테리어)	 (동작)		집 짓는다는 예시
+jQuery(10년이상 사용중)
+
+cs방식
+c : client - s : sever
+  (요청)	   (응답)
+
+연수 한기대 => 훈련교사
+
+brackets => Brackets.Release.1.14.2.msi (window)

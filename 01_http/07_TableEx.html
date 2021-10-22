@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블실습</title>
+    <style>
+        caption{
+            padding: 20px;
+        }
+        table, tr, th, td{
+            border: 1px solid black;
+            border-collapse: separate;
+        }
+        caption{
+            font-size: 20px;
+        }
+        th{
+            font-size: larger;
+        }
+        table{
+            /* width: 600px; */
+            /* text-align: center; */
+        }
+        th, td{
+            /* padding: 10px; */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>공연요금표</caption>
+        
+        <colgroup>
+            <col style="width: 80px"> 
+            <col style="width: 100px"> 
+            <col style="width: 150px"> 
+        </colgroup>
+
+        <tr>
+            <th colspan="3"><b>공연요금</b></th>
+        </tr>
+        <tr>
+            <td>구분</td>
+            <td>S석</td>
+            <td>VIP</td>
+        </tr>
+        <tr>
+            <td>성인</td>
+            <td>30,000원</td>
+            <td>40,000원</td>
+        </tr>
+        <tr>
+            <td>청소년</td>
+            <td>40,000원</td>
+            <td>60,000원</td>
+        </tr>
+        <tr>
+            <td>소인</td>
+            <td colspan="2">미취학 아동 일반 요금의 50%</td>
+        </tr>
+        <tr>
+            <td rowspan="2">공연시간</td>
+            <td>1회</td>
+            <td colspan="2">13:00~15:00</td>
+        </tr>
+        <tr>
+            <td>2회</td>
+            <td colspan="2">15:00~17:00</td>
+        </tr>
+
+    </table>
+</body>
+</html>

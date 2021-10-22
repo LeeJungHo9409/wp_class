@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지사용</title>
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        무료 이미지 : 픽사베이
+        기본표준 : .jpg 
+        web → Resource
+        html = 참조방식
+    -->
+
+    <!-- 1.로컬 컴퓨터 이미지 불러오기 -->
+    <img src="./images/dandnadna.jpg" alt="오징어게임" width="640" height="480">
+    <img src="./images/swan-g67136e8e4_1920.jpg" alt="거위" width="640" height="480">
+    <img src="./images/캡처본.jpg" alt="캡처본" width="640" height="480">
+    <!--
+        기준 html 문서 위치가 기준으로 한다.
+        프로젝트 폴더가 항상 최상위 부모가 된다.
+
+           □                    01.html 폴더         최상위 부모
+        ↙ ↓ ↘                 css images js 폴더      형재
+          ★                        dandnadna.jpg       조카 
+        
+          src 속성값의 './' 현재라는 의미를 가지고 있다.
+
+        상대경로 90%가 상대경로를 쓴다.
+        절대경로
+    -->
+
+    <!-- 2.CDN방식으로 이미지 불러오기 -->
+    <img src="https://cdn.pixabay.com/photo/2021/09/02/16/48/cat-6593947__340.jpg" alt="고양이" width="640" height="480">
+    <img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png" alt="다음로고">
+    <!-- 3. 가상 이미지 사용 [시안작업할떄 영역잡아두는 역활로 많이씀]-->
+    <img src="http://placehold.it/640x480" alt="가상이미지">
+    <!-- 4. 투명배경 이미지 사용 *.png -->
+    <img src="./images/pngwing.com.png" alt="애플로고 png" width="640" height="480">
+    <!-- 5. 벡터방식 이미지 사용 *.svg -->
+    <img src="./images/apple-logo-svgrepo-com.svg" alt="애플로고.svg" width="640" height="480">
+
+</body>
+</html>

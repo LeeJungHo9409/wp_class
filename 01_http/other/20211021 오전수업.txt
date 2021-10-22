@@ -1,0 +1,44 @@
+신입 / 3년차 차이 => 기능이 있는지 없는지...
+
+HTML,	CSS, 	JavaScript
+(뼈대)  (인테리어)	 (동작)		집 짓는다는 예시
+jQuery(10년이상 사용중)
+
+HTML(Hyper Text Markup Language)
+연결 텍스트 (hyper text)
+ - 참고 : web은 링크가 발달 (예시 ; 뉴스탭)
+표시 markup
+ - 참고 : 태그
+연결 텍스트 표시 언어 -브라우저-
+
+cs방식
+c : client - s : sever
+  (요청)	   (응답)
+
+크로스 브라우징 : 여러 브라우저를 하나의 코딩으로 통합해주는 기술 (규약)
+
+웹표준 지정 해주는 곳 - W3C - / (참고용) w3school.com, MDN
+
+규칙
+<요소명> -> 태그(tag)
+(명령, 기능, 성격)
+<요소명 속성명 = 속성값>
+a. 형식 8:2
+일반 <body iang = ~~~ // 속성> 콘텐츠 </body> 80%
+         부모    자식     부모		!중요 DOM객체 (부모 자식 관계를 모르면 안됨)
+단일태크, 빈태그 : <img/> 20%
+b. 성격(혈액형) 3종류 8:2
+block-level 80%
+inline-level 20%
+
+개발tip
+웹호스팅엔 순서가 있다.
+기본이 'index.html' 이다.
+
+정보처리기사, 정보처리산업기사, 웹디자인 기능사
+(삼성 sds, cg cns, 현대 => 정부)
+
+연수 한기대 => 훈련교사
+
+
+brackets => Brackets.Release.1.14.2.msi (window)

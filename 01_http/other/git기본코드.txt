@@ -1,0 +1,17 @@
+git init
+- .git 폴더 생성 (git 생성이라 보면됨)
+
+git config --global user.name "~~"
+git config --global user.email ~~
+- git 처음 만들때 쓰일 계정 만드다 보면됨.
+
+git clone [원격 저장소 주소]
+
+git remote add [저장소명] [git 주소(원격 저장소 주소)]
+- 원격저장소랑 연결시킴
+
+git add *
+- 데이터를 저장시킴
+
+git commit -m '~~'
+- 

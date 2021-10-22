@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표구조 지정 테이블</title>
+    <!-- 
+        접근성에서 관계있는 테이블 
+        통계부분 할때 표테이블 효율적
+
+        구조
+        t head
+        t body
+        t foot(er)
+    -->
+    <style>
+        table, tr, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table{
+            text-align: center;
+        }
+        th, td{
+            width: 80px;
+            padding: 10px;
+        }
+        thead{
+            background-color: chartreuse;
+        }
+        tfoot{
+            
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            <h1>학교현황</h1>
+        </caption>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>학교수</th>
+                <th>학급수</th>
+                <th>학생수</th>
+                <th>교원수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>초둥학교</th>
+                <td>11,231</td>
+                <td>12,332</td>
+                <td>13,433</td>
+                <td>14,534</td>
+            </tr>
+            <tr>
+                <th>중학교</th>
+                <td>11,231</td>
+                <td>12,342</td>
+                <td>13,443</td>
+                <td>14,544</td>
+            </tr>
+            <tr>
+                <th>고등학교</th>
+                <td>11,271</td>
+                <td>12,242</td>
+                <td>13,733</td>
+                <td>14,214</td>
+            </tr>
+            <tr>
+                <th>대학교</th>
+                <td>11,281</td>
+                <td>12,212</td>
+                <td>13,633</td>
+                <td>14,239</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>합계</th>
+                <td>22,000</td>
+                <td>29,000</td>
+                <td>40,000</td>
+                <td>77,000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

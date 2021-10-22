@@ -5,8 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Colgroup</title>
+    <style>
+        table, tr, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table{
+            width: 600px;
+            text-align: center;
+        }
+        th, td{
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <table>
+        <caption>Colgroup은 반드시 Caption 다음에 코딩해야 함.</caption>
+        <colgroup>
+            <!-- li와 비슷한 역활 태그-->
+            <col style="width: 200px"> 
+            <col style="width: 300px"> 
+            <col style="width: 150px"> 
+            <col style="width: 300px"> 
+        </colgroup>
+        <tr>
+            <th>이름</th>
+            <td>내용</td>
+            <th>연락처</th>
+            <td>내용</td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td colspan="3">내용</td>
+        </tr>
+        <tr>
+            <th>자기소개</th>
+            <td colspan="3">자기소개내용</td>
+        </tr>
+    </table>
 </body>
 </html>

@@ -1,9 +1,12 @@
-git init
-- .git 폴더 생성 (git 생성이라 보면됨)
+git --version
+-git 버전확인 (거의 대부분 git 설치여부 볼라고 봄)
 
 git config --global user.name "~~"
 git config --global user.email ~~
 - git 처음 만들때 쓰일 계정 만드다 보면됨.
+
+git init
+- .git 폴더 생성 (git 생성이라 보면됨)
 
 git clone [원격 저장소 주소]
 - 내 pc 저장소와 gitHub 서버 저장소를 연결시켜준다.

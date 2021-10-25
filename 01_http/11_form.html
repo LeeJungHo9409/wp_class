@@ -153,16 +153,72 @@
 
         <fieldset>
             <legend>select | 여러데이터 나열</legend>
-            <p>웹퍼블리싱</p>
-            <p>여러항목을 선택하고 싶으면, shift + 클릭</p>
-            <select>
+            <p>
+                <label for="lab_01">웹퍼블리싱</label>
+            </p>
+            <!-- select multiple 때만 shift+클릭시 다중선택가능 -->
+            <p>여러항목을 선택하고 싶으면, shift + 클릭, ctr1+클릭</p>
+            <select id="lab_01" multiple>
                 <option value="html">HTML</option>
                 <option value="css">CSS</option>
                 <option value="js">JavaScript</option>
                 <option value="java">JAVA</option>
             </select>
         </fieldset>
+
+        <fieldset>
+            <legend>optgroup | 여러데이터 분류</legend>
+            <!-- 쉽게말해 선택박스안에 단나누기 -->
+            <p>
+                <label for="frontend">프론트엔드 | 백엔드</label>
+                <!-- select#fullstack -->
+                <select id="fullstack">
+                    <optgroup label="프론트엔드">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">JavaScript</option>
+                    </optgroup>
+
+                    <optgroup label="백엔드">
+                        <option value="java">JAVA</option>
+                        <option value="servlet">Servlet</option>
+                        <option value="jsp">JSP</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
         
+        <fieldset>
+            <legend>disabled readonly</legend>
+            <ul>
+                <li>
+                    <label for="serial">시리얼 넘버 입력 : </label>
+                    <input type="text" id="serial" placeholder = "시리얼 넘버 입력 : ">
+                    <input type="button" value="이전">
+                    <input type="button" value="NEXT" disabled>
+                </li>
+                <li>
+                    <label for="book">선택한 책 : </label>
+                    <input type="text" id="book" value="웹퍼블리싱" readonly>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                datalist 태그 | 데이터 목록에 제시한 값 중 선택하면 텍스트 필드에 자동으로 입력
+            </legend>
+            <label for="interest">관심분야</label>
+            <input type="text" id="interest" list="choice">
+            <!--datalist id 속성값은 받는 input list와 동일해야한다.-->
+            <datalist id="choice">
+                <option value="grammer" lable="문법"></option>
+                <option value="voca" lable="어휘"></option>
+                <option value="speaking" lable="회화"></option>
+                <option value="listening" lable="리스닝"></option>
+            </datalist>
+        </fieldset>
+
         <!-- 전송용 버튼 -->
         <input type="submit" value="OK">
         <input type="reset" value="CANCEL">

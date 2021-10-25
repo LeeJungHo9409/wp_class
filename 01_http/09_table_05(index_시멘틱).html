@@ -1,0 +1,115 @@
+<!-- 구조의 핵심은 레이아웃의 가로배치이다. float, flex -->
+<!-- vscode는 박스 모델 이다. -->
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <title>구조 시멘틱(의미있는) 태그</title>
+        <meta charset="utf-8">
+        <meta name="author" content="웹문서 소유자">
+        <meta name="keywords" content="웹개발 프론트엔드 백엔드 풀스텍">
+        <meta name="description" content="풀스택 개발자가 되기 위한 과정입니다.">
+        <style>
+            /* CSS RESET */
+            *{
+                margin : 0;
+                padding: 0;
+            }
+            h1,h2,h3,h4,h5,h6{
+                font-size: 16px; /*카멜 표기법*/
+                font-weight: normal;
+            }
+
+            li{
+                list-style: none; /*점 없애기*/
+            }
+            a{
+                text-decoration: none;
+                color : black;
+            }
+            /* CSS RESET */
+
+            header{
+                background-color: orange;
+                height: 200px;
+            }
+            nav{
+                background-color: orangered;
+            }
+            section{
+                /* color: white; */
+                background-color: #003393;
+                height: 180px;
+
+           }
+        </style>
+    </head>
+    <body>
+        <!-- 1.헤더영역 시작 -->
+        <header>
+            <h1>EZEN COMPUTER</h1>  <!-- 헤더의 첫 번째는 대부분 로고가 온다고 보면됨.-->
+            <p>GNB메뉴 : 메인메뉴</p>
+            <nav>
+                <!-- ul>li>a[href=#] a 태그의 속성값 href는 항상 채워두기 -->
+                <ul>
+                    <li><a href="#">메뉴1</a></li>
+                    <li><a href="#">메뉴2</a></li>
+                    <li><a href="#">메뉴3</a></li>
+                    <li><a href="#">메뉴4</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 1.헤더영역 끝 -->
+
+        <!-- 2.컨텐츠 시작 (main) -->
+        <main role="main"> <!-- main 태그에는 role='main'를 써야됨,-->
+            <!-- 
+                크게 두개 많이 쓰임. / 따로 분류는 개인에 따라 다르다. 그래서 사용하더라도 항상 이유있게 쓰자.
+                1. section(영역)
+                    - 가장 크게는 section
+                2. article(기사)
+                    - section 안에 작은 소소한 메뉴들을 article로 사용.
+             -->
+             <!-- 2-1. 세션 시작 -->
+             <section>     
+                 <h2>Queen1집</h2>
+                 <article>
+                     <ul>
+                         <li><a href="#">보헤미안 랩소디</a></li>
+                         <li><a href="#">레디오 가가</a></li>
+                         <li><a href="#">킬러 퀸</a></li>
+                     </ul>
+                 </article>
+            </section>
+            <!-- 2-1. 세션 끝 -->
+
+            <!-- 2-2. 아티클 영역 시작 -->
+            <article>
+                <h2>보헤미안 랩소디</h2>
+                <article>1절가사</article>
+                <article>2절가사</article>
+            </article>
+            <!-- 2-2. 아티클 영역 끝 -->
+
+        </main> <!-- 과거에는 익스플로어 떄문에 안썼는데 6개월 전부터 애플사에서 쓰기 시작함.-->
+        <!-- 2.컨텐츠 끝 (main 영역이다.) -->
+
+        <!-- 3.푸터 영역 -->
+        <footer>
+            <p>&copy;Copyright All Rights Reserved</p>
+        </footer>
+        <!-- 3.푸터 영역 -->
+
+        <!-- 4.어사이드 영역 -->
+        <aside>
+            본문외의 내용을 적용하고 싶을때 사용 (ex. 사이드 배너)
+        </aside>
+        <!-- 4.어사이드 영역 -->
+
+        <!-- 5.박스영역 / 부모자식 중요하기에 -->
+        <div>
+            작은박스 영역 :: 블록요소 그룹핑 태그
+        </div>
+        <!-- 5.박스영역 -->
+    </body>
+</html>

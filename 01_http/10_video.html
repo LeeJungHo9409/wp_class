@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멀티미디어 비디오</title>
+    <style>
+        video{
+            width: 320px;
+            height: 320px;
+        }
+    </style>
+</head>
+<body>
+    <h1>비디오 파일 재생하기</h1>
+    <figure> <!-- 부모 자식으로 활용하는 것을 선호한다.-->
+        <video controls muted autoplay loop poster ='./images/main.jpg'> <!-- controls 속성 : 아래 컨트롤키 만들기. / muted autoplay loop : 무한루프-->
+            <!-- ↑(부모)↓(자식)상속 -->
+            <!-- 통상적으로 많은 미디어를 가지고 오기에 video태그의 속성 주기보단 단일태크를 쓰는게 더 효율적이다.-->
+            <source src="./media/painting.mp4" type="video/mp4"> 
+            <source src="./media/Painting.webm" type="video/webm">
+            윗 영상을 보고 싶으면 최신 브라우저를 설치하여 보세요.
+            <!-- 따로 바뀌는게 없음 / '경제' (프로그래머가 개발할때 사용자 기준을 낮게 봐야한다. 배려라고 생각하면 된다.) 관련되서 윗 처럼 해주는 것이다. -->
+        </video>
+    </figure>
+</body>
+</html>

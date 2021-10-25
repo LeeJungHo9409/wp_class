@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 폼요소</title>
+    <style>
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="#"> <!-- 폼요소는 애 빼고 인라인이다.-->
+        <!-- form action = "#"  == Server Programing page.jsp(.jsp, .php, .asp)-->
+        <!-- method = "get"     == 서버에 데이터를 넘길때 데이터값이 보임(보안취약) -->
+        <!-- method = "post"    == 서버에 데이터를 넘길때 데이터값이 보이지 않는다.-->
+        <fieldset>
+            <legend>로그인정보</legend> <!--폼의 제목이 온다.-->
+            <ul>
+                <li>
+                    <label for="id_input">아이디 : </label>
+                    <input type="id" id="id_input" size="12">
+                </li>
+                <li>
+                    <label for="password_input">패스워드 : </label>
+                    <input type="password" id="password_input" maxlength="8">
+                </li>
+                <li>
+                    <label for="passwordCK_input">패스워드 확인 : </label>
+                    <input type="password" id="passwordCK_input" maxlength="8">
+                </li>
+                <li>
+                    <label for="tel_input">전화번호 : </label>
+                    <input type="tel" id="tel_input">
+                </li>
+                <li>
+                    <label for="email_input">이메일 : </label>
+                    <input type="email" id="email_input">
+                </li>
+                <li>
+                    <label>                             <!--형식 맞출라고 해주는게 좋다.-->
+                        <input type="file">
+                    </label>
+                </li>
+                <li>
+                    <label for="value"></label>
+                    <textarea name="value" id="value" cols="50" rows="3."></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        
+        <!-- 과거 서버에서 진행했던 필드유효성 검사는 오류 및 버그가 많기에 클라이언트(브라우저)에서 자체적으로 진행한다. -->
+        <fieldset>
+            <legend>필드유효성 검사</legend>
+            <P>
+                * 표시는 필수 항목입니다.
+            </P>
+
+            <!-- HTML5에서 세세하게 나뉘게 됨. input태그의 type 속성값 확인 -->
+            <ul>
+                <li>
+                    <label for="check_name">* 이름</label>
+                    <input type="text" id="check_name" required="required" autocomplete="off" autofocus>
+                    <!-- 
+                        input required : 같은 값인지 체크해주는 요소. (자기 자신껄 판단하는거면 required만 써도됨.)
+                        input autocomlete : 
+                        input autofocus : 처음 시작할때 커서 위치를 지정해준다.
+                    -->
+                </li>
+                <li>
+                    <label for="check_id">* 아이디</label>
+                    <input type="text" id="check_id" required autocomplete="off"> 
+                </li>
+                <li>
+                    <label for="check_pw">* 비밀번호</label>
+                    <input type="password" id="check_pw" required placeholder="8자리 입력">
+                    <!-- input placeholder : 텍스트박스 안에 글자 입력 -->
+                </li>
+                <li>
+                    <label for="check_tel">* 전화번호</label>
+                    <input type="tel" id="check_tel" required placeholder="숫자만 입력하세요.">
+                </li>
+                <li>
+                    <label for="check_email">* E-mail</label>
+                    <input type="email" id="check_email" required placeholder="ex)admin@naver.com">
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>라디오버튼</legend>
+            <p>
+                이 달에 신청할 과목을 선택하세요(1과목만 선택 가능)
+            </p>
+            <label>
+                <input type="radio" name="subjeckR_1" value="html_radio" checked>HTML
+                <!-- input checked : 시작시 체크해주는것 -->
+                <!-- input value : 속성값은 항상 있어야함. id와 같이 데이터 주고 받을 때 필요. -->
+            </label>
+            <label>
+                <input type="radio" name="subjeckR_2" value="css_radio">CSS
+            </label>
+            <label>
+                <input type="radio" name="subjeckR_3" value="js_radio">JavaScript
+            </label>
+
+        </fieldset>
+        <!-- json 데이터형식이란? → 키명 : 키값 -->
+        <fieldset>
+            <legend>체크박스버튼</legend>
+            <p>
+                이 달에 신청할 과목을 선택하세요(복수 선택 가능)
+            </p>
+            <label>
+                <input type="checkbox" name="subjectC_1" value="html_checkbox">HTML
+            </label>
+            <label>
+                <input type="checkbox" name="subjectC_2" value="css_checkbox">CSS
+            </label>
+            <label>
+                <input type="checkbox" name="subject_3" value="js_checkbox">JavaScript
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>HTML5 input TYPE</legend>
+            <p>
+                <label for="search">검색 : </label>
+                <input type="search" id = search>
+            </p>
+            <p>
+                <label for="url">사이트 주소 : </label>
+                <input type="reset" id="url">
+            </p>
+            <!-- 부가적인 -->
+            <p>
+                <label for="number">수량 : </label>
+                <!-- 
+                    input type number value : 텍스트박스 초기 표시 
+                                        min : 최소값
+                                        max : 최대값
+                                        step: 변경 숫자
+                -->
+                <input type="number" id="number" value="0" min="1" max="10" step="2">
+            </p>
+            <p`>
+                <label for="data">날짜선택(년,월,일) : </label>
+                <input type="date" id="data">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>select | 여러데이터 나열</legend>
+            <p>웹퍼블리싱</p>
+            <p>여러항목을 선택하고 싶으면, shift + 클릭</p>
+            <select>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="java">JAVA</option>
+            </select>
+        </fieldset>
+        
+        <!-- 전송용 버튼 -->
+        <input type="submit" value="OK">
+        <input type="reset" value="CANCEL">
+        <!-- 버튼생성 -->
+        <input type="button" value="CHECK">
+    </form>
+</body>
+</html>

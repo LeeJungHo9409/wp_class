@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div구조실습</title>
+
+    <style>
+    /*  CSS RESET */
+        /* 여백, 공백 */
+        *{  
+            margin : 0;
+            padding: 0;
+        }
+        /* li */
+        li{
+            list-style: none;
+        }
+        /* 링크 */
+        a{
+            text-decoration: none;
+            color : black;
+        }
+    /* CSS RESET */
+        
+        /* 헤더 */
+        header{
+            background-color: orange;
+            height: 200px;
+        }
+        /* nav */
+        nav{
+            background-color: orangered;
+        }
+
+        /* div 공통 조정 */
+        div{
+            color:white;
+            height: 170px;
+        }
+
+        /* div class 명 받아서 개개인 style 적용 */
+        .brown{background-color: brown;}
+        .magenta{background-color: magenta;}
+        .orange{background-color: orange;}
+        .green{background-color: green;}
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <!-- header 로고나 메인글 -->
+        <h1>이젠컴퓨터아카데미</h1>
+        
+        <!-- header 메인메뉴 -->
+        <h2>메인메뉴</h2>
+        <nav>
+            <ul> <!--=========1Depth============-->
+                <li><a href="#">1Depth메뉴1</a></li>
+                <ul><!--=========2Depth============-->
+                    <li><a href="#">&nbsp2Depth서브메뉴</a></li>    <!--엔티티코드 &nbsp 공백 적용-->
+                    <li><a href="#">&nbsp2Depth서브메뉴2</a></li>   <!--엔티티코드 &nbsp 공백 적용-->
+                </ul><!--=========2Depth============-->
+                <li><a href="#">1Depth메뉴2</a></li>
+                <li><a href="#">1Depth메뉴3</a></li>
+                <li><a href="#">1Depth메뉴4</a></li>
+            </ul><!--=========1Depth============-->
+        </nav>
+    </header>
+
+    <main>
+        <!-- 
+            div class 명 지정 
+        -->
+        <div class = 'brown'>     
+            <h2>왼쪽컨텐츠</h2>
+            <p>내용</p>
+       </div>
+
+       <div class = 'magenta'>     
+            <h2>가운데컨텐츠</h2>
+            <p>내용</p>
+        </div>
+
+        <div class = 'orange'>     
+            <h2>오른쪽컨텐츠</h2>
+            <p>내용</p>
+        </div>
+
+        <div class = 'green'>     
+            <p>사이트내용</p>
+        </div>
+    </main>
+</body>
+</html>

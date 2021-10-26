@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일시트</title>
+
+    <!-- 외부스타일 호출 -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- 내부스타일 -->
+    <style>
+        /* 0.전체선택자*/
+        *{
+            color: darkgray;
+        }
+        /*1.요소명 선택자*/
+        h1{
+            color : red;
+        }
+        /*2.클래스 선택자*/
+        .txt_1{
+            color: white;
+            background-color: black;
+        }
+        /*3.id 선택자 */
+        #txt_3{
+            background-color: purple;
+        }
+        /*5. 캐스케이딩 원리 */
+        .txt_2{
+            color: purple;
+            background-color: orange;
+            font-size: 36px;
+        }
+        /* 
+            * 캐스케이딩의 기본 원리 *
+            제정의하지 않는 이상 그대로 
+            1. 같은 선택자
+            2. 같은 속성명
+            3. 다른 속성값일 경우 : 하단에 있는 속성값 적용!
+        */
+        .txt_2{
+            font-size: 18px;
+        }
+        /* 그룹선택자 */
+
+        .group, .group_1{
+            background-color: orchid;
+        }
+
+        /* 실습css */
+        .test_1{
+            font-size: 40px;
+            color: black;
+        }
+        .test_2{
+            font-size: 100px;
+            color: blue;
+        }
+        .test_3{
+            font-size: 80px;
+            color: purple;
+        }
+    </style>
+</head>
+<!-- web은 top down 방식임. 위에서 아래로. -->
+<body>
+    <!-- 1. 요소명 선택자 -->
+    <h1>
+        CSS(CascandingStyleSheet)
+        <!--
+            Cascanding : 폭포(계단타고 내려오는 물이라 생각하면 됨)
+            StyleSheet : 엑셀관련 폼들이 브라우저에 내장되어 있다. ex) 엑셀
+            MVC패턴 : Model View JavaScript
+        -->
+    </h1>
+    <p>
+        웹표준에 의한 웹문서는 디자인과 내용이 분리되어 있습니다.
+    </p>
+    <p>
+        내용은 HTML을 이용해 구성하고, 디자인은 CSS를 이용해 꾸미는 것입니다.
+    </p>
+
+    <!-- 4. 인라인 스타일 -->
+    <h2 style="color: blue;">
+        인라인 스타일시트 적용하기
+    </h2>
+
+    <!-- 2.클래스 선택자 -->
+    <h3 class = "txt_1">
+        class 스타일시트
+    </h3>
+    <p>
+        class로 스타일 정의시 구분기호로 <span class="test_1">.</span>을 사용
+    </p>
+    <!-- 5. 캐스케이딩 -->
+    <h3 class="txt_2">
+        스타일 캐스케이딩 원리
+    </h3>
+    <p>
+        같은 이름의 선택자에 같은 속성명이 정의되어 있을떄,
+        속성값이 다르면, 하단에 있는 스타일의 속성값 적용
+    </p>
+    <!-- 3.id 선택자 -->
+    <h3 id = 'txt_3'>
+        ID 스타일시트
+    </h3>
+    <p>
+        id로 스타일 정의시 구분기호로 <span class="test_2">#</span>을 사용
+    </p>
+    <!-- 그룹 선택자 -->
+    <h3 class="group">
+        그룹선택자
+    </h3>
+    <p class="group_1">
+        그룹 선택자 구분기호는 <span class="test_3">,</span>을 사용하여 여러개의 요소를 선택
+    </p>
+</body>
+</html>

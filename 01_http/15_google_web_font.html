@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구글웹폰트</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+        *{
+            background-color: seagreen;
+        }
+        h1{
+            /* sans-serif 고딕체 / serif 궁서체 굳이 상관없음*/
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            font-style: italic;
+            /* rgba : a는 alpha 투명도 0 ~ 1  투명도는 배경색에 비치는 색임*/
+            color: rgba(255,255,255, 0.2);
+        }
+        h2{
+            font-family: 'Zen Antique Soft', serif;
+        }
+        h2{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 36px;
+            color: darkblue;
+        }
+        p{
+            font-family: 'Oswald', sans-serif;
+            /* font-size: 20px; */
+
+            
+            
+            font-size: 32px;
+            font-size: 200%;
+            font-size: 2em;
+            font-size: 2rem;
+            
+            font-size: 30px;
+            font-size: 1.875em;
+            font-size: 1.875rem;
+            font-size: 187.5%;
+            
+            font-size: 14px;
+            font-size: 0.875em;
+            font-size: 0.875rem;
+            font-size: 87.5%;
+            font-size: 16px;
+            font-size: 100%;
+            font-size: 1em;
+            font-size: 1rem;
+            line-height: 2em;
+            /* 기본단위 em */
+            /*
+                TOP DOUWN 방식
+                font-size:  16px; 폰트 사이즈 기본값     절대값
+                            100%;                       상대값
+                            1em;                        상대값
+                            1rem;                       상대값          root(최상위 분모)
+                절대값 : 의미가 그닥 없음 px
+                상대값 : 반드시 기준이 있어야함. (기준값을 기준으로 값이 변한다. )
+                    ex) em, rem, %
+                간단하게 구할값/기준값 = em, rem            분자/분모(분수생각)
+                        (구할값/기준값)*100 = %
+
+                정적 데이터 == 절대값
+                동적 데이터 == 상대값
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Standard Publishing</h1>
+    <h2>웹표준방식</h2>
+    <!-- lorem lpsum : 구도 잡을때 의미없는 텍스트 넣을때 쓰는 사이트 -->
+    <!-- 
+        https://fonts.google.com/ 구글 웹 폰트
+        link 마지막꺼 쓰면됨.
+        너무 많이 쓰면 오류걸림 그래서 remove all 해줘서 깔끔하게 해주는걸 좋음.
+     -->
+    <!-- 상업용 폰트는 사야된다. 단, 구글웹폰트가 나옴으로써 거의 무료화 되어간다. -->
+    <!-- 영문 / 한글 폰트 따로 써야 편함. -->
+    <!-- 볼브 900 -->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum ut
+        lacus vel congue. Donec dolor tellus, semper in mollis a, auctor blandit dui.
+        Mauris sodales quam eget nulla dictum, sit amet ultrices ante feugiat.
+        Suspendisse auctor, eros quis malesuada sollicitudin, nisl arcu pretium nibh, et
+        egestas odio nibh in nisi. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Donec sed faucibus dui. Aliquam eget blandit justo. Aenean at magna
+        tincidunt, rutrum est ut, aliquam mi. Donec dapibus condimentum viverra.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+        turpis egestas. Cras eget pharetra neque. Mauris id iaculis neque, non ultrices
+        nibh. Phasellus rutrum velit eu nunc pellentesque, sit amet feugiat justo
+        porttitor. Ut vel eros nisl.
+    </p>
+    
+    <p class="font">
+        Cras auctor id ex et gravida. In vitae risus quam. Cras vitae libero nisl. Nunc
+        sit amet dolor auctor, aliquet justo condimentum, dictum nisi. Aenean sit amet
+        orci nisi. Mauris volutpat mollis ipsum in gravida. Donec condimentum sagittis
+        dolor, in lacinia sem. Cras ultrices leo vitae malesuada interdum. Vestibulum
+        lacinia, enim eu pellentesque congue, tellus neque luctus augue, eu ultricies
+        ligula metus sed nunc. Pellentesque velit sem, pulvinar eget feugiat sit amet,
+        aliquet et ipsum. Quisque in diam sed quam efficitur efficitur non sit amet
+        nisi. Suspendisse blandit, massa at congue mattis, ante libero viverra mi, a
+        finibus ante ipsum vel magna. Nam convallis est ut elit feugiat, vitae sagittis
+        arcu posuere. Vivamus ex nisi, mattis vitae tempor vel, luctus eget risus. Duis
+        fermentum at ante hendrerit viverra. Maecenas in lorem a nisl fermentum
+        dignissim ut a magna.
+    </p>    
+
+
+</body>
+</html>

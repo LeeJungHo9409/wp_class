@@ -35,9 +35,6 @@
         p{
             font-family: 'Oswald', sans-serif;
             /* font-size: 20px; */
-
-            
-            
             font-size: 32px;
             font-size: 200%;
             font-size: 2em;
@@ -52,6 +49,7 @@
             font-size: 0.875em;
             font-size: 0.875rem;
             font-size: 87.5%;
+
             font-size: 16px;
             font-size: 100%;
             font-size: 1em;
@@ -73,6 +71,21 @@
                 정적 데이터 == 절대값
                 동적 데이터 == 상대값
             */
+        }
+
+        /* 한줄표기법 */
+        .font{
+            /* font-family: 'Zen Antique Soft', serif; */
+            font: normal 20px/1.5 'Zen Antique Soft', sans-serif; /* normal = italic 20px/행단 가속성때문에 권장 1.5~2.0 */
+            color: skyblue;
+        }
+        .small{
+            color: #00f;
+            color: blue;
+            color: rgb(0, 0, 255);
+            color: rgba(0, 0, 255, 0.5);
+            /* 앞글자 대문자 */
+            font-variant: small-caps;
         }
     </style>
 </head>
@@ -115,8 +128,10 @@
         arcu posuere. Vivamus ex nisi, mattis vitae tempor vel, luctus eget risus. Duis
         fermentum at ante hendrerit viverra. Maecenas in lorem a nisl fermentum
         dignissim ut a magna.
-    </p>    
-
+    </p>   
+    <p>
+        서울<span class="small">(seoul)</span>, 대한민국
+    </p>
 
 </body>
 </html>

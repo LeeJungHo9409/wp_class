@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본구조실습</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/17/16_구조폼실습.css">
+</head>
+<body>
+    <form action="#" method="#">
+        
+        <header>
+            <h1>LOGO</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">COMPANY</a>
+                    </li>
+                    <li>
+                        <a href="#">VISION</a>
+                    </li>
+                    <li>
+                        <a href="#">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="#">REQUEST</a>
+                    </li>
+                    <li>
+                        <a href="#">BOARD</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main role="main">
+            <fieldset class="fi_img">
+                <img src="./images/main.jpg" art ="main" width="900" height="200">
+                <p>
+                    Proin consectetur blandit purus sed blandit. Aenean cursus magna id purus
+                    porttitor, id feugiat dui hendrerit. Nullam interdum ipsum eu tincidunt
+                    facilisis. Donec fringilla nisi non vestibulum ornare. Proin commodo ultrices
+                    lacus et consequat. Aliquam ac eleifend justo. Nullam condimentum dolor vel leo
+                    suscipit sollicitudin. Donec nisi augue, imperdiet eget tristique quis, aliquet
+                    sed libero. Nam pulvinar tellus ultricies, iaculis neque id, ullamcorper libero.
+                    Donec quis ullamcorper velit, nec gravida risus. Praesent non volutpat diam.
+                    Praesent a libero maximus, dignissim sapien vel, interdum magna.
+                </p>
+            </fieldset >
+
+            <fieldset class="fi_log">
+                <legend>Log-In</legend>
+                <ol>
+                    <li>
+                        <p>
+                            <label for="id_id">ID : </label>
+                            <input type="id" id="id_id" placeholder="ID를 입력해주세요" autofocus>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <label for="password_pw">PASSWORD : </label>
+                            <input type="password" id="password_pw" placeholder="비밀번호를 입력해주세요">
+                        </p>
+                    </li>
+                </ol>
+            </fieldset>
+
+            <fieldset class="fi_web">
+                <legend>Web-Part</legend>
+                <ol>
+                    <li>
+                        <input type="checkbox" name="web" id="pu_c">Web Publishing
+                    </li>
+                    <li>
+                        <input type="checkbox" name="web" id="de_c">Web Design
+                    </li>
+                    <li>
+                        <input type="checkbox" name="web" id="pl_c">Web Planner
+                    </li>
+                </ol>
+            </fieldset>
+
+            <fieldset class="fi_comm">
+                <legend>Comment</legend>
+                <textarea name="aTxt_1" id="aTxt_1" cols="50" rows="3"></textarea>
+            </fieldset>
+
+            <fieldset class="fi_but">
+                <button type="submit">WRITE</button>
+                <button type="reset">RESET</button>
+            </fieldset>
+        </main>
+
+        <footer>
+            <p>
+                &copy;&nbsp;copyright all rights reserved
+            </p>
+        </footer>
+    </form>
+
+</body>
+</html>

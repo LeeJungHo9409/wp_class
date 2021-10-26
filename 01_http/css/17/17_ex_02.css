@@ -1,0 +1,60 @@
+*{
+    color: white;
+}
+
+form{
+    width: 940px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+fieldset{
+    border-style: none;
+}
+
+header{
+    background-color: orange;
+}
+
+.fi_who{
+    background-color: rgb(77, 21, 21);
+}
+
+.fi_sns{
+    background-color: green;
+}
+
+.fi_ski{
+    background-color: darkgray;
+}
+
+.fi_tab{
+    background-color: darkseagreen;
+}
+
+footer{
+    background-color: rgb(240, 99, 48);
+}
+legend, h2{
+
+    color: black;
+    font-size: 20px;
+}
+
+
+caption{
+    color: black;
+}
+
+table,tr,th{
+    width: 600px;
+    padding: 20px;
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: black;
+}
+.table_01{
+    font-size: 20px;
+    text-align: center;
+}

@@ -11,6 +11,27 @@
     <link rel="stylesheet" href="./css/17/16_구조폼실습.css">
 </head>
 <body>
+    <!-- <div id = "wrap">
+        <h1>LOGO</h1>
+        <ul>
+            <li>
+                <a href="#">COMPANY</a>
+            </li>
+            <li>
+                <a href="#">VISION</a>
+            </li>
+            <li>
+                <a href="#">PORTFOLIO</a>
+            </li>
+            <li>
+                <a href="#">REQUEST</a>
+            </li>
+            <li>
+                <a href="#">BOARD</a>
+            </li>
+        </ul>
+    </div> -->
+
     <form action="#" method="#">
         
         <header>
@@ -38,7 +59,7 @@
 
         <main role="main">
             <fieldset class="fi_img">
-                <img src="./images/main.jpg" art ="main" width="900" height="200">
+                <img src="./images/main.jpg" alt ="main">
                 <p>
                     Proin consectetur blandit purus sed blandit. Aenean cursus magna id purus
                     porttitor, id feugiat dui hendrerit. Nullam interdum ipsum eu tincidunt
@@ -51,19 +72,20 @@
                 </p>
             </fieldset >
 
+            <!-- 강사님은 여기부터 form 시작 -->
             <fieldset class="fi_log">
                 <legend>Log-In</legend>
                 <ol>
                     <li>
                         <p>
                             <label for="id_id">ID : </label>
-                            <input type="id" id="id_id" placeholder="ID를 입력해주세요" autofocus>
+                            <input type="id" id="id_id" placeholder="ID를 입력해주세요" size="20" maxlength="8" required autofocus>
                         </p>
                     </li>
                     <li>
                         <p>
                             <label for="password_pw">PASSWORD : </label>
-                            <input type="password" id="password_pw" placeholder="비밀번호를 입력해주세요">
+                            <input type="password" id="password_pw" placeholder="비밀번호를 입력해주세요" size="20" maxlength="8">
                         </p>
                     </li>
                 </ol>
@@ -71,22 +93,23 @@
 
             <fieldset class="fi_web">
                 <legend>Web-Part</legend>
-                <ol>
-                    <li>
-                        <input type="checkbox" name="web" id="pu_c">Web Publishing
-                    </li>
-                    <li>
-                        <input type="checkbox" name="web" id="de_c">Web Design
-                    </li>
-                    <li>
-                        <input type="checkbox" name="web" id="pl_c">Web Planner
-                    </li>
-                </ol>
+                <p>
+                    <!-- checkbox value 값은 db에 보내는 값이므로 꼭 쓰기 -->
+                    <label>
+                        <input type="checkbox" name="web" value="pu_c">Web Publishing
+                    </label>
+                    <label>
+                        <input type="checkbox" name="web" value="de_c">Web Design
+                    </label>
+                    <label>
+                        <input type="checkbox" name="web" value="pl_c">Web Planner
+                    </label>
+                </p>
             </fieldset>
 
             <fieldset class="fi_comm">
                 <legend>Comment</legend>
-                <textarea name="aTxt_1" id="aTxt_1" cols="50" rows="3"></textarea>
+                <textarea cols="50" rows="3"></textarea>
             </fieldset>
 
             <fieldset class="fi_but">

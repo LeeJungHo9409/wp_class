@@ -1,0 +1,56 @@
+*{
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(235, 236, 238);
+}
+
+#wrap{
+    width: 1300px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+hr{
+    padding: 0;
+}
+header h1, li{
+    padding: 5px;
+}
+
+.etc ul{
+    padding: 0;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 50px;
+    color: darkred;
+}
+
+header, section, footer{
+    padding: 50px;
+}
+
+header :nth-child(2){
+    color: red;
+    font-size: small;
+}
+
+
+h2{
+    font-size: large;
+    font-weight: bold;
+    color: darkred;
+}
+
+header, footer, .ski ul, .etc ul{
+    text-align: center;
+}
+
+footer{
+    color: darkred;
+}
+.ski li, .etc li{
+    display: inline;
+}
+

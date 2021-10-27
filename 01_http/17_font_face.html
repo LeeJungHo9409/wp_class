@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트사용하기</title>
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <style>
+        /* @ 메모리에 저절로 가있음. (원래 다른 기능들은 메모리를 설정해줘야함.) */
+        @font-face {
+            font-family: 'trana';
+            src: local('trana'), /* font-family 키값이랑 같아야함. */
+            
+            /* eot는 익스플로어 구버전 / woff 구글웹에서 만든 폰트임. */
+            /* 확장자 무게순이라 생각하면 편함 */
+            /* MS에서 만든 폰트로 font-face를 처음 도입 = IE8 이하버전은 .eot만 인식 */
+            url('./font/trana.eot'), 
+            /* TTF/OTF 압축버전, 다른 글꼴 형식보다 빠르게 로드됨 | 웹에서 사용할 목적으로 개발 */
+            url('./font/trana.woff') format('woff'), 
+            /* 맥/윈도우의 가장 일반적인 글꼴, IE8은 지우너하지 않음 | 단점은 용량이 큼 */
+            url('./font/trana.ttf') format('truetype');
+        }
+
+        .user_font{
+            font-family: 'trana', serif;
+            font-size: 36px;
+            font-weight: bold;
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Using Default Fonts</h1>
+        <p class="user_font">
+            Using Trana Fonts
+        </p>
+    </article>
+</body>
+</html>

@@ -13,6 +13,10 @@ form{
 a{
     font-family: 'Oswald', sans-serif;
 }
+li{
+    display: inline-block;
+    margin: 20px;
+}
 .fi_img, .fi_but{
     border-style: none;
 }

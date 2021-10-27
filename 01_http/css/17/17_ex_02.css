@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+.oswald {font-family: 'Oswald', sans-serif;}
+.roboto {font-family: 'Roboto', sans-serif;}
+
 *{
     color: white;
 }
@@ -41,7 +47,6 @@ legend, h2{
     font-size: 20px;
 }
 
-
 caption{
     color: black;
 }
@@ -53,6 +58,11 @@ table,tr,th{
     border: 1px solid black;
     border-collapse: collapse;
     color: black;
+}
+
+tr, td{
+    width: 80px;
+    padding: 10px;
 }
 .table_01{
     font-size: 20px;

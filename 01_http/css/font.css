@@ -1,0 +1,114 @@
+/* en noto */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Noto+Sans&family=Noto+Sans+Display&family=Noto+Sans+Mono&family=Noto+Serif&family=Noto+Serif+Display&display=swap');
+/*en ohter */
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat&family=Open+Sans&family=Oranienbaum&family=Pacifico&family=Rampart+One&family=Roboto&family=Rubik+Beastly&family=Russo+One&family=Yomogi&family=Zen+Antique&family=Zen+Antique+Soft&family=Zen+Kaku+Gothic+Antique&family=Zen+Kurenaido&display=swap');
+
+/* ko */
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=East+Sea+Dokdo&family=IBM+Plex+Sans+KR&family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Noto+Serif+KR&display=swap');
+
+/* en noto */
+.en_font_01{
+    font-family: 'Monoton', cursive;
+}
+.en_font_02{
+    font-family: 'Noto Sans', sans-serif;
+}
+.en_font_03{
+    font-family: 'Noto Sans Display', sans-serif;
+}
+.en_font_04{
+    font-family: 'Noto Sans Mono', monospace;
+}
+.en_font_05{
+    font-family: 'Noto Serif', serif;
+}
+.en_font_06{
+    font-family: 'Noto Serif Display', serif;
+}
+
+/* en other */
+.en_font_07{
+    font-family: 'Bad Script', cursive;
+}
+.en_font_08{
+    font-family: 'Montserrat', sans-serif;
+}
+.en_font_09{
+    font-family: 'Open Sans', sans-serif;
+}
+.en_font_10{
+    font-family: 'Oranienbaum', serif;
+}
+.en_font_11{
+    font-family: 'Pacifico', cursive;
+}
+.en_font_12{
+    font-family: 'Rampart One', cursive;
+}
+.en_font_13{
+    font-family: 'Roboto', sans-serif;
+}
+.en_font_14{
+    font-family: 'Rubik Beastly', cursive;
+}
+.en_font_15{
+    font-family: 'Russo One', sans-serif;
+}
+.en_font_16{
+    font-family: 'Yomogi', cursive;
+}
+.en_font_17{
+    font-family: 'Zen Antique', serif;
+}
+.en_font_18{
+    font-family: 'Zen Antique Soft', serif;
+}
+.en_font_19{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.en_font_20{
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+/* ko */
+
+.ko_font_01{
+    font-family: 'Dokdo', cursive;
+    
+}
+.ko_font_02{
+    
+    font-family: 'East Sea Dokdo', cursive;
+}
+.ko_font_03{
+    
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+.ko_font_04{
+    font-family: 'Nanum Brush Script', cursive;
+    
+}
+.ko_font_05{
+    font-family: 'Nanum Gothic', sans-serif;
+    
+}
+.ko_font_06{
+    font-family: 'Nanum Gothic Coding', monospace;
+    
+}
+.ko_font_07{
+    font-family: 'Nanum Myeongjo', serif;
+    
+}
+.ko_font_08{
+    font-family: 'Nanum Pen Script', cursive;
+    
+}
+.ko_font_09{
+    
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.ko_font_10{
+    
+    font-family: 'Noto Serif KR', serif;
+}

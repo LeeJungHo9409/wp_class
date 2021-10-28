@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        /* 한줄표기법 */
+        body{
+            font: 14px/1.5 "굴림",sans-serif;
+            color: #333;
+        }
+        #wrap{
+            width: 800px;
+            margin: 0 auto;
+            background-color: #ccc;
+        }
+
+        /* 헤더 */
+
+        header{
+            background-color: #123456;
+            padding: 10px 0;
+        }
+
+        header h1{
+            font: 30px "궁서", GungSeo, sans-serif;
+            font-weight: 700;
+            color: #cc0;
+            text-align: center;
+        }
+
+        strong{
+            font-size: 300%;
+            color: #ffd;
+        }
+
+        #topic{
+            font-size: 150%;
+        }
+
+        #story{
+            font-size: 200%;
+            color: #ccc;
+            font-style: italic;
+        }
+
+        /* 섹션 */
+        section{
+
+        }
+        section nav{
+            float: left;
+        }
+        section nav .lnb{
+            width: 200px;
+            padding: 20px;
+        }
+
+        section nav .lnb li{
+            padding: 5px 0;
+        }
+
+        section nav .lnb li a:hover{
+            color:#662;
+            border-bottom: 1px dashed #662;
+        }
+
+        section #conten_wrap{
+            width: 600px;
+            background-color: #fff;
+            float: right;
+        }
+        section #conten_wrap h2{
+            font: bold 24px "궁서", GungSeo, sans-serif;
+            color: yellow;
+            background-color: #800;
+            padding: 10px 20px;
+        }
+        section #conten_wrap p{
+            padding: 20px;
+            text-align: justify;
+        }
+
+        section::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /* footer */
+        footer{
+            background-color: #aaa;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 1 헤더영역 -->
+        <header>
+            <h1>
+                <strong>호랑이</strong>를 <span id="topic">주제</span>로 한 <span id="story">민화</span>
+            </h1>
+        </header>
+        <!-- 1 헤더영역 -->
+
+        <!-- 2. 섹션콘텐츠 -->
+        <section>
+            <nav>
+                <ul class="lnb">
+                    <li><a href="#">그림의 작가</a></li>
+                    <li><a href="#">그림의 시대</a></li>
+                    <li><a href="#">그림의 재료</a></li>
+                    <li><a href="#">그림의 주인공</a></li>
+                    <li><a href="#">그림의 활용</a></li>
+                </ul>
+            </nav>
+            <article id="conten_wrap">
+                <h2>길상백호</h2>
+                <p>
+                    사신(四神)은 동서남북의 방위를 나타내고 우주의 질서를 유지하는 상징적인 동물을 말한다.동쪽의 청룡,
+                    서쪽의 백호,
+                    남쪽의 주작,
+                    북쪽의 현무가 있으며 이러한 개념이 언제부터 발생한 것인가 정확하지 않지만 오행사상과 깊은 관련이 있는 것으로 추정된다.우리나라에서 사신이 미술품에 표현되기 시작한 것은 삼국시대로 고구려 고분벽화에서 그 예를 찾을 수 있으며 각종 공예품,
+                    건축물,
+                    민화 등에 다양하게 사용되었다.음양오행이 순리에 어긋나지 않고 제대로 지켜지는 것을 최고의 길상으로 여겼던 동양적 가치관에 의하면 오행의 천문,
+                    방위,
+                    색채관이 녹아 들어간 사신도 역시 최고의 길상적 표현으로 볼 수 있을 것이다.그 외에도 사신은 사방의 수호신으로서 부대의 깃발 포진에도 응용되었으며,
+                    좌청룡.우백호.전주작.후현무로 풍수지리에 적용되었다.
+                </p>
+                <h2>승훈용호도</h2>
+                <p>
+                    군기(軍旗)인 대오방기(大五方旗)의 하나인 백호기(白虎旗).진영(陣營)의 오른쪽 문에 세워서 우군(右軍)ㆍ우영(右營)혹은 우위(右衛)를 지휘하는 데 쓰였다.흰색 바탕의 사각 천 위에 날개를 단 백호(白虎)와 청(靑)ㆍ적(赤)ㆍ황(黃)ㆍ백색(白色)의 구름문양을 그려 넣었으며 화염각(火炎脚 : 불꽃모양을 상징하기 위해 깃발의 가장자리에 덧댄 천)과 기각(旗脚 : 깃대 반대쪽 위아래나 그 사이에 불꽃처럼 붙인 가닥의 천),
+                    깃대 쪽에 덧댄 천은 노란색이다.보통 이러한 군기는 넓은 의미에서 의장기(儀仗旗)에 포함되며 의장기가 그대로 군기로 쓰이기도 했다
+                        .백택기 역시 의장기의 하나로 대가노부와 법가노부 등에 사용되어졌던 것이다
+                        .노부(鹵簿)란 의장을 갖춘 국왕의 행렬,
+                    즉 국가적 의례행렬을 뜻하며 이러한 행렬에 동원된 각종 물품과 그 편성 및 운용제도를 통칭한다.노부는 규모에 따라 대가(大駕)ㆍ법가(法駕)ㆍ소가(
+                        小駕
+                    )로 나누어진다.의장으로 사용된 품목은 각종의 깃발 ㆍ산(傘 : 우산ㆍ일산)ㆍ선(扇 : 부채)ㆍ부(斧 : 도끼)ㆍ창 등으로 매우 다양하며,
+                    국가의 위엄과 권위를 의식에 부여하기 위해 이러한 노부류를 사용한 것이라 할 수 있다.
+                </p>
+            </article>
+        </section>
+        <!-- 2. 섹션콘텐츠 -->
+        <!-- 3. 푸터영역 -->
+        <footer>
+            <p>
+                &copy;copyright all rights reserved
+            </p>
+        </footer>
+        <!-- 3. 푸터영역 -->
+    </div>
+</body>
+</html>

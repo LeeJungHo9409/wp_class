@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기초 GNB float 실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <style>
+        *{
+            background-color: black;
+            box-sizing: border-box;
+        }
+        #wrap{
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        #wrap header, section{
+            padding-top: 10px;
+        }
+
+        #wrap>header>h1{
+            /* border: 1px solid white; */
+        }
+
+        #wrap header nav ul{
+            /* border: 1px solid white; */
+            line-height: 30px;
+            float: right;
+        }
+
+        #wrap>header>nav>ul>li{
+            /* border: 1px solid white; */
+            width: 100px;
+            /* */
+            text-align: center;
+            float: left;
+        }
+
+        .nav ul li:hover{
+            background-color: blue;
+            margin-left: 10px;
+        }
+
+        .nav ul li{
+            display: inline-block;
+            background-color: red;
+            color: white;
+            margin-left: 10px;
+            margin-top: 5px;
+            margin-left: 10px; 
+        }
+
+        #wrap>header>h1{
+            float: left;
+        }
+
+        #wrap>header :after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>
+                <img src="http://placehold.it/95x41" alt="로고 가상이미지">
+            </h1>
+            
+            <nav class="nav">
+                <ul>
+                    <li>COMPANY</li>
+                    <li>PRODUCT</li>
+                    <li>SERVICE</li>
+                    <li>COMMUNITY</li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img src="http://placehold.it/1000x600" alt="메인 가상이미지">>
+        </section>
+    </div>
+</body>
+</html>

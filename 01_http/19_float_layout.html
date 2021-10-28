@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 레이아웃</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            /* 뒤에 굴림, 고딕은 굳이 안써줘도 되지만 알고는 있어야한다. */
+            font-family: "굴림", Gulim, sans-serif;
+        }
+
+        h1{
+            background-color: gray;
+            text-align: center;
+            font-size: 42px;
+            font-size: 2.625rem;
+            padding: 10px 0;
+        }
+
+        #content{
+            width: 640px;
+        }
+
+        #content>h2{
+            font-size: 200%;
+            padding: 10px;
+            color: red;
+        }
+
+        #content ul{
+            background-color: orange;
+            /* float 해제 가장 쉬운 기법 (안씀... ㅠ) */
+            overflow: hidden;
+        }
+
+        #content ul li{
+            /* 자식 자손들의 너비값 - 부모 조상 640px - */
+            width: 160px;
+            /* 잘됐나 확인 가장 좋은 방법은 css 해제가 되어 있나 확인하면됨. 해제되면 플롯 해제 안된거임. */
+            /* 
+                float 해제 기법
+                부모박스에서 해제 (가장기초인데 잘 안쓴다.)
+             */
+            float: left;
+        }
+        #content ul li h2{
+            font-size: 40px;
+            background-color: red;
+            width: 120px;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin: 0 auto;
+        }
+
+        .flower_2 p, .flower_4 h2{
+            background-color: silver !important;
+        }
+        .flower_3 p, .flower_2 h2{
+            background-color: green !important;
+        }
+        .flower_4 p, .flower_3 h2{
+            background-color: blue !important;
+        }
+
+        #content ul li p{
+            padding: 10px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        float : 띄우다 개념(가로배치) 
+        1. 박스의 너비값 (w, h)
+        2. float 해제 기술
+    -->
+
+    <h1>나의 아름다운 정원</h1>
+    <section id="content">
+        <h2>나의 아름다움 정렬</h2>
+        <ul>
+            <li class="flower_1">
+                <h2>튜울립</h2>
+                <p>
+                    정용진 신세계그룹 부회장이 미국 캘리포니아주 비벌리힐스의 호화주택을 매입한 사실이 알려져 화제다.
+                </p>
+            </li>
+            <li class="flower_2">
+                <h2>장미</h2>
+                <p>
+                    미국의 부동산 전문매체 더트(Dirt)는 26일(현지시간)"이병철 삼성그룹 창업주의 손자이자 한국 최대 유통그룹의 후계자인 정용진 부회장이 비벌리힐스에 있는 호화주택을 구입했다"고 보도했다.
+                </p>
+            </li>
+            <li class="flower_3">
+                <h2>안개꽃</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+            </li>
+            <li class="flower_4">
+                <h2>매화</h2>
+                <p>
+                    이 매체는 해당 주택이 한동안 2200만달러 수준으로 평가됐던 점을 감안하면 정 부회장의 매입가는 다소 낮은 편이지만 여전히 큰 금액이라고 설명했다. 또 정 부회장에 대해서는 한국에서 가장 부유한 여성 중 한명인 이명희 신세계그룹 회장의 외아들이며 그의 순자산은 포브스 기준으로 17억달러(1조9924억원)으로 추산된다고 덧붙였다.
+                </p>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float layout 해제</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #content{
+            width: 900px;
+        }
+
+        #content div{
+            height: 100px;
+            color: white;
+        }
+
+        .sec_part1{
+            width: 300px;
+            background-color: red;
+            float: left;
+        }
+        .sec_part2{
+            width: 300px;
+            background-color: blue;
+            float: left;
+        }
+        .sec_part3{
+            width: 300px;
+            background-color: green;
+            float: left;
+        }
+        #content :after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <section id = "content">
+        <div class="sec_part1">
+            섹션 왼쪽
+        </div>
+        <div class="sec_part2">
+            섹션 가운데
+        </div>
+        <div class="sec_part3">
+            섹션 오른쪽
+        </div>
+    </section>
+</body>
+</html>

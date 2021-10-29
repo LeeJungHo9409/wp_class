@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project layout</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            margin: 0 auto;
+            width: 1000px;
+            font-size: 20px;
+            /* background: #000; */
+            text-align: center;
+            position: relative;
+        }
+
+        #wrap #cover{
+            width: 80%;
+            /* border: 3px solid white; */
+        }
+
+        #wrap header{
+            /* border: 5px solid black; */
+            line-height: 100px;
+        }
+
+        #wrap article{
+            line-height: 300px;
+        }
+
+        #wrap footer{
+            /* border: 1px solid black; */
+            line-height: 100px
+        }
+
+        #wrap header h2{
+            width: 30%;
+            background-color: gainsboro;
+            float: left;
+        }
+
+        #wrap header ul{
+            width: 70%;
+            background-color: red;
+            /* border: 1px solid black; */
+            float: right;
+        }
+
+        #wrap header ul li{
+            margin-left: 20px;
+            /* border: 1px solid black; */
+            float: left;
+        }
+
+        #wrap article #i_lnb{
+            width: 40%;
+            background-color: pink;
+            float: left;
+        }
+
+        #wrap article p{
+            width: 60%;
+            background-color: greenyellow;
+            float: left;
+        }
+
+        #wrap aside li{
+            width: 20%;
+            height: 30%;
+            /* border: 1px solid black; */
+            background-color: skyblue;
+
+            /* 포시즌 */
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 99999999;
+            float: right;
+        }
+
+        #wrap footer li{
+            background-color: green;
+        }
+
+        #wrap :after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div id = "wrap">
+        <div id = "cover">
+            <header>
+                <h2>logo</h2>
+                <ul>
+                    <li class="c_gnb" id="i_gnb">GNB</li>
+                    <li class="c_ut" id="i_ut">유틸리티메뉴</li>
+                    <li class="c_sel" id="i_sel">검색창</li>
+                </ul>
+            </header>
+    
+            <article>
+                <li id="i_lnb">LNB</li>
+                <p>
+                    콘텐츠내용
+                </p>
+            </article>
+            
+            <footer>
+                <li>하단메뉴, 주소, 저작권</li>
+            </footer>
+        </div>
+        
+        <aside>
+            <p>퀵메뉴</p>
+        </aside>
+    </div>
+</body>
+</html>

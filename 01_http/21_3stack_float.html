@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3단 float layout</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <style>
+        div{
+            padding: 20px;
+        }
+        /* 공통 */
+        #wrap{
+            width: 960px;
+            margin: 0 auto;
+            background-color: azure;
+        }
+        header h1{
+            font-size: 50px;
+            background-color: cadetblue;
+        }
+        #wrap #container{
+            background-color: cornflowerblue;
+            /* border: 1px solid black; */
+        }
+
+        #wrap #container #cover{
+            background-color: crimson;
+            /* 플롯 */
+            float: left
+        }
+
+        #wrap #container #cover .content1{
+            width: 130px;
+            background-color: tomato;
+            /* 플롯 */
+            float: left;
+        }
+
+        #wrap #container #cover .content2{
+            width: 450px;
+            background-color: wheat;
+            margin-left: 20px;
+            margin-right: 20px;
+            /* 플롯 */
+            float: left;
+        }
+        #wrap #container .content3{
+            width: 130px;
+            background-color: violet;
+            /* 플롯 */
+            float: right;
+        }
+
+        /* 플롯해제 */
+        #wrap :after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        footer{
+            background-color: skyblue;
+            /* text-align: center; */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>사이트제목</h1>
+        </header>
+
+        <div id = "container">
+            <div id="cover">
+                <section class="content1">
+                    <h2>사이드바</h2>
+                    <ul>
+                        <li><a href="#">메뉴1</a></li>
+                        <li><a href="#">메뉴2</a></li>
+                        <li><a href="#">메뉴3</a></li>
+                    </ul>
+                </section>
+                <section class="content2">
+                    <h2>본문</h2>
+                    <p>
+                        국내 코로나19 신규 확진자가 이틀 연속 2천 명대를 기록했습니다.
+                        중앙방역대책본부는 오늘(29일) 0시 기준으로 국내 코로나19 신규 확진자는 국내 발생 2,094명, 해외유입 30명이 확인돼 총 2,124명이라고 밝혔습니다.
+                        지역별로 보면 서울 769명, 경기 753명, 인천 130명 등 수도권이 전체 국내 발생의 79%가량을 차지했습니다.
+                        수도권 외 지역은 대구 116명, 충남 67명, 전북 55명, 경북·부산 42명, 충북 34명, 경남 33명, 강원 21명, 전남 12명 등입니다.
+                        해외 유입은 외국인이 17명, 내국인이 13명으로, 이 가운데 22명은 지역사회 격리 중 확진됐고, 8명은 공항 검역 단계에서 확인됐습니다.
+                        의심신고 검사자 수는 5만 2,599명, 수도권 임시선별검사소 검사 건수는 8만 6,355건, 비수도권 임시선별검사소 검사 건수는 1만 1,334건으로 총 검사 건수는 15만 288건입니다.
+                        신규 격리해제자는 2,142명으로 현재 2만 4,724명이 치료를 위해 격리 중이고, 위중증 환자는 331명입니다.
+                        사망자는 하루 사이 9명이 늘어 누적 사망자는 2,817명, 치명률은 0.78%를 기록 중입니다.
+                    </p>
+                    <p>
+                        국내 코로나19 신규 확진자가 이틀 연속 2천 명대를 기록했습니다.
+                        중앙방역대책본부는 오늘(29일) 0시 기준으로 국내 코로나19 신규 확진자는 국내 발생 2,094명, 해외유입 30명이 확인돼 총 2,124명이라고 밝혔습니다.
+                        지역별로 보면 서울 769명, 경기 753명, 인천 130명 등 수도권이 전체 국내 발생의 79%가량을 차지했습니다.
+                        수도권 외 지역은 대구 116명, 충남 67명, 전북 55명, 경북·부산 42명, 충북 34명, 경남 33명, 강원 21명, 전남 12명 등입니다.
+                        해외 유입은 외국인이 17명, 내국인이 13명으로, 이 가운데 22명은 지역사회 격리 중 확진됐고, 8명은 공항 검역 단계에서 확인됐습니다.
+                        의심신고 검사자 수는 5만 2,599명, 수도권 임시선별검사소 검사 건수는 8만 6,355건, 비수도권 임시선별검사소 검사 건수는 1만 1,334건으로 총 검사 건수는 15만 288건입니다.
+                        신규 격리해제자는 2,142명으로 현재 2만 4,724명이 치료를 위해 격리 중이고, 위중증 환자는 331명입니다.
+                        사망자는 하루 사이 9명이 늘어 누적 사망자는 2,817명, 치명률은 0.78%를 기록 중입니다.
+                    </p>
+                    <p>
+                        국내 코로나19 신규 확진자가 이틀 연속 2천 명대를 기록했습니다.
+                        중앙방역대책본부는 오늘(29일) 0시 기준으로 국내 코로나19 신규 확진자는 국내 발생 2,094명, 해외유입 30명이 확인돼 총 2,124명이라고 밝혔습니다.
+                        지역별로 보면 서울 769명, 경기 753명, 인천 130명 등 수도권이 전체 국내 발생의 79%가량을 차지했습니다.
+                        수도권 외 지역은 대구 116명, 충남 67명, 전북 55명, 경북·부산 42명, 충북 34명, 경남 33명, 강원 21명, 전남 12명 등입니다.
+                        해외 유입은 외국인이 17명, 내국인이 13명으로, 이 가운데 22명은 지역사회 격리 중 확진됐고, 8명은 공항 검역 단계에서 확인됐습니다.
+                        의심신고 검사자 수는 5만 2,599명, 수도권 임시선별검사소 검사 건수는 8만 6,355건, 비수도권 임시선별검사소 검사 건수는 1만 1,334건으로 총 검사 건수는 15만 288건입니다.
+                        신규 격리해제자는 2,142명으로 현재 2만 4,724명이 치료를 위해 격리 중이고, 위중증 환자는 331명입니다.
+                        사망자는 하루 사이 9명이 늘어 누적 사망자는 2,817명, 치명률은 0.78%를 기록 중입니다.
+                    </p>
+                </section>
+            </div>
+    
+            <section class="content3">
+                <h2>사이드바</h2>
+                <ul>
+                    <li><a href="#">우측메뉴1</a></li>
+                    <li><a href="#">우측메뉴2</a></li>
+                    <li><a href="#">우측메뉴3</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <footer>
+            <h2>푸터영역</h2>
+            <p>copyright all rights reserved</p>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조 프로젝트</title>
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            width: 800px;
+            margin: 0 auto;
+        }
+        /* 헤더 */
+        #wrap header{
+            text-align: center;
+            background-color: orange;
+        }
+        #wrap header #main_header{
+            color: white;
+        }
+        #wrap header #main_header h1{
+            font-size: 90px;
+        }
+        #wrap header #main_header p{
+            font-size: 18px;
+        }
+        #wrap header #sma_h{
+            background-color: #ccc;
+        }
+        #wrap header #sma_h #ffs{
+            font-size: 10px;
+        }
+        #wrap header #sma_h #mfs{
+            font-size: 20px;
+        }
+        #wrap header #sma_h #lfs{
+            font-size: 12px;
+        }
+        /* 헤더 */
+        /* article */
+        #wrap article{
+            background-color: gainsboro;
+        }
+        #wrap article #nav{
+            background-color: red;
+            float: left;
+        }
+        #wrap article #nav h2{
+            color: white;
+        }
+        #wrap article #nav .bgc{
+            background-color: white;
+        }
+        #wrap article #main_p{
+            float: left;
+        }
+        /* article */
+        #wrap aside{
+            background-color: pink;
+        }
+
+        #wrap aside{
+            width: 20%;
+            float: right;
+        } 
+        #wrap footer{
+            background-color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="main_header">
+                <h1>Musee d'Orsa</h1>
+                <p> Musee d'Orsa Musee d'Orsa Musee d'Orsa Musee d'Orsa Musee d'Orsa </p>
+            </div>
+            <div id="sma_h">
+                <li id="ffs">Royal Academy of Arts.</li>
+                <li id="mfs">The Real VANGOGH</li>
+                <li id="lfs">THE ARTIST AND HIS LETTERS</li>
+            </div>
+        </header>
+
+        <div id="cover">
+            <article>
+                <div id="nav">
+                    <h2>ARTIST</h2>
+                    <ul class="bgc">
+                        <li><a href="#">작가의 작품</a></li>
+                        <li><a href="#">작가의 시대</a></li>
+                        <li><a href="#">작가의 일생</a></li>
+                    </ul>
+                </div>
+                <ul class="main_p">
+                    <li class="main_li">피리부는 소년</li>
+                    <li class="sub_li">에두아르마</li>
+                    <li class="sub_li_02">1866 Musee d'Orsa Musee 161*97cm</li>
+                    <li class="main_li">고흐의 방</li>
+                    <li class="sub_li">에두아르마</li>
+                    <li class="sub_li_02">1866 Musee d'Orsa Musee 161*97cm</li>
+                    <li class="main_li">황색 그리스도가 있는 화가의 자화상</li>
+                    <li class="sub_li">에두아르마</li>
+                    <li class="sub_li_02">1866 Musee d'Orsa Musee 161*97cm</li>
+                    <li class="main_li">오페라좌의 관현악단</li>
+                    <li class="sub_li">에두아르마</li>
+                    <li class="sub_li_02">1866 Musee d'Orsa Musee 161*97cm</li>
+                    <li class="main_li">만종</li>
+                    <li class="sub_li">에두아르마</li>
+                    <li class="sub_li_02">1866 Musee d'Orsa Musee 161*97cm</li>
+                    <li class="main_li">제비꽃 장식을 단 베르트모리조</li>
+                    <li class="sub_li">에두아르마</li>
+                    <li class="sub_li_02">1866 Musee d'Orsa Musee 161*97cm</li>
+                </ul>
+            </article>
+    
+            <aside>
+                <ul class="s_big">
+                    <li>전세계인에게</li>
+                    <li>제일 사랑받는</li> 
+                    <li>서양 미술사의 시대</li>
+                </ul>
+                <ul class="s_small">
+                    <ul>
+                        <li><p>Workshow Go</p></li>
+                        <li><p>Life drawing workshop</p></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><p>Summer exhibition</p></li>
+                        <li><p>Summer exhibition</p></li>
+                    </ul>
+    
+                    <ul>
+                        <li><p>RA collection</p></li>
+                        <li><p>RA collection</p></li>
+                    </ul>
+                </ul>
+            </aside>
+        </div>
+
+        <footer>
+            <p>2021 Musee d'Orsa Musee. All Rights Reserved. d'Orsa Musee@d'Orsa Musee.com Legal status</p>
+        </footer>
+    </div>
+</body>
+</html>

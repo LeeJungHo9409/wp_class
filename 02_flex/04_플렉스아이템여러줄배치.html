@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        플렉스아이템 여러줄 배치(flex-wrap)
+        <!-- 플렉스 박스안에 픍렉스 아이템이 배치될때 기본적으로 한 줄로만 배치
+        박스를 여러줄로 배치하고 싶다면 flex-wrap 사용 -->
+    </title>
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <style>
+        /* 예시제목 */
+        #wrap section h1{
+            margin: 24px 0;
+        }
+
+        /* content1 */
+        #wrap section .content1{
+            height: 150px;
+            color: white;
+
+            /* flex */
+            display: flex;
+            flex-direction: row;
+            /* 한줄정렬 */
+            flex-wrap: nowrap;
+        }
+        #wrap section .content1 div{
+            width: 50%;
+            height: 50%;
+        }
+        /* content1 */
+
+        /* content2 */
+        #wrap section .content2{
+            height: 150px;
+            color: white;
+
+            /* flex */
+            display: flex;
+            flex-direction: row;
+            /* flex 여러줄 정렬 */
+            flex-wrap: wrap;
+        }
+        #wrap section .content2 div{
+            width: 50%;
+            height: 50%;
+        }
+        /* content2 */
+
+        /* 색보정 */
+        #wrap section .red {
+            background-color: red;
+        }
+        #wrap section .plum {
+            background-color: plum;
+        }
+        #wrap section .purple {
+            background-color: purple;
+        }
+        #wrap section .gray {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <article></article>
+        <section>
+            <h1>flex-wrap:nowrap 예시</h1>
+            <div class="content1">
+                <div class="red">1</div>
+                <div class="plum">2</div>
+                <div class="purple">3</div>
+                <div class="gray">4</div>
+            </div>
+            <h1>flex-wrap:wrap 예시</h1>
+            <div class="content2">
+                <div class="red">1</div>
+                <div class="plum">2</div>
+                <div class="purple">3</div>
+                <div class="gray">4</div>
+            </div>
+        </section>
+        <footer></footer>
+        <aside></aside>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        플렉스 아이템 주축방향배치 (justify-content) => (부모박스)에 설정
+        : 플렉스 아이템 플렉서블 박스 주축의 시작점부터 배치
+    </title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <style>
+        #wrap{
+            width: 90%;
+            height: 500px;
+            margin: 0 auto;
+            border: 3px solid black;
+
+            /* flex */
+            display: flex;
+            /* 한줄정리 */
+            flex-flow: row nowrap;
+           
+            /* 플렉스 아이템(자식박스)을 박스 주축의 시작점부터 배치(기본값) */
+            justify-content: flex-start;
+            /* 플렉스 아이템(자식박스)을 박스 주축의 끝 지점부터 배치(기본값) */
+            justify-content: flex-end;
+            /* 플렉스 아이템(자식박스)을 박스 주축의 중앙 지점부터 배치(기본값) */
+            justify-content: center;
+
+            /* 플렉스 박스에 빈공간이 있을때 사용. */
+            /* 양쪽 긑에 있는 박스의 양 옆에도 공간을 둔채 자동정렬 */
+            justify-content: space-around;
+            /* 처번쨰 박스와 마지막 박스는 양쪽 긑에 붙이고, 나머지 박스는 동일한 간격으로 처리됨 */
+            justify-content: space-between;
+        }
+
+        #wrap div{
+            width: 20%;
+            height: 20%;
+        }
+
+        #wrap div:nth-child(1){
+            background-color: plum;
+        }
+        #wrap div:nth-child(2){
+            background-color: violet;
+        }
+        #wrap div:nth-child(3){
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

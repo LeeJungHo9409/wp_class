@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        개별배치(align-self)=> 중요(플렉스아이템)에 설정
+        <!-- : 교차축 방향으로 플렉스 아이템 개별적 배치
+        부모박스에 align-items값이 상속되는 개념(align-self값이 없을 경우) -->
+    </title>
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <style>
+        section{
+            width: 300px;
+            height: 200px;
+            background-color: #ccc;
+            
+            /* flex */
+            display: flex;
+            flex-flow: row wrap;
+            /* 개별배치 */
+            /* 가운데 */
+            align-items: center;
+        }
+
+        section div{
+            width: 60px;
+            margin: 5px;
+        }
+
+        div:nth-child(1){
+            background-color: #afc;
+            min-height: 30px;
+
+            /* 부모상속 */
+            align-self: flex-start;
+        }
+        div:nth-child(2){
+            background-color: #cef;
+            min-height: 30px;
+        }
+        div:nth-child(3){
+            background-color: #2dc;
+            min-height: 30px;
+        }
+        div:nth-child(4){
+            background-color: #6f2;
+            min-height: 30px;
+
+            /* 부모상속 */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>item #1</div>
+        <div>item #2</div>
+        <div>item #3</div>
+        <div>item #4</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,23 @@
+nav{
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* 하위선택자 */
+.wrap ul li {
+    display: inline-block;
+    margin: 30px;
+}
+
+/* 가상클래스 브라우저 자체 저장되어있음 */
+.wrap ul li a:hover {
+    /* 마우스 올려둘때 변화해라 */
+    color: cadetblue;
+}
+
+.wrap ul li:nth-child(4){
+    /* 하나만 바꾸고 싶을때 */
+    margin: 0;
+}

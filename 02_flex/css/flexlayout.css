@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/* 공통 */
+#wrap{
+    width: 90%;
+    height: 1000px;
+    margin: 0 auto;
+    color: white;
+
+    position: relative;
+    text-align: center;
+
+    justify-content: flex-end;
+}
+
+/* 헤더 */
+#wrap header{
+    width: 100%;
+    line-height: 100px;
+    background-color: tomato;
+}
+
+#wrap header nav{
+    min-height: 80px;
+}
+
+/* article - 슬라이더, 컨텐트01,02 */
+#wrap article{
+    height: 50%;
+    
+    display: flex;
+    flex-flow: row nowrap;
+
+    justify-content: space-around;
+}
+
+#wrap article #sli{
+    
+    width: 60%;
+    line-height: 500px;
+    background-color: turquoise;
+}
+#wrap article #content01{
+    width: 20%;
+    background-color: #f2f;
+}
+#wrap article #content02{
+    width: 20%;
+    background-color: #f03;
+}
+
+/* section - 최신글, 인기글, 배너1, 배너2, 소셜네트워크 */
+#wrap section{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    justify-content: space-around;
+}
+
+#wrap section #p01{
+    width: 30%;
+    line-height: 300px;
+    background-color: #00f;
+}
+
+#wrap section article{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* flex-grow, flex-shrink, flex-basis */
+
+#wrap section article #topic_p{
+    width: 60%;
+    /* height: 100%; */
+    background-color: #0f2;
+    /* border: 2px solid black; */
+    flex-basis: 100%;
+}
+
+#wrap section article #ba_1{
+    width: 40%;
+    height: 50%;
+    /* border: 2px solid black; */
+    background-color: #ff1;
+}
+#wrap section article #ba_2{
+    width: 40%;
+    height: 50%;
+    /* border: 2px solid black; */
+    background-color: #225;
+}
+#wrap section #so{
+    width: 20%;
+    line-height: 300px;
+    background-color: #557;
+}
+
+/* 푸터 */
+#wrap footer{
+    line-height: 100px;
+    background-color: #171;
+}
+
+/* 사이드 */
+#wrap aside{
+    width: 10%;
+    background-color: #662;
+    line-height: 150px;
+    
+    position: absolute;
+    top: 0;
+    left: -80;
+    z-index: 100;
+}

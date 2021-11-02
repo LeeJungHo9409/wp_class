@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자 가상요소 수식</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        #wrap{
+            color: black;
+            text-align: center;
+            margin: 100px;
+        }
+        #wrap h1{
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 48px;
+        }
+        tr{
+            border: 1px solid black;
+        }
+        table{
+            width: 200px;
+            border-collapse: collapse;;
+        }
+        td{
+            padding: 20px;
+        }
+        td:hover{
+            border-color: darkseagreen;
+            cursor: pointer;
+        }
+        /* 수식을 사용해 선택하기 */
+        /* table tr:nth-child(2n){
+            background-color: gray;
+            color:black;
+        } */
+        /* table tr:nth-child(odd){
+            background-color: gray;
+            color:black;
+        }*/ 
+        table tr:nth-child(2n+1){
+            background-color: red;
+            color:black;
+        } 
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h2>웹개발</h2>
+        <table>
+            <tr>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+            </tr>
+
+            <tr>
+                <td>JavaScript</td>
+            </tr>
+
+            <tr>
+                <td>jQuery</td>
+            </tr>
+
+            <tr>
+                <td>React</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

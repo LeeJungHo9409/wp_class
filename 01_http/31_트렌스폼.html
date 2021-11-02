@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform 속성</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        #wrap{
+            width: 1600px;
+            margin: 0 auto;
+        }
+
+        img{
+            width: 300px;
+            height: 400px;
+        }
+
+        #translate, #scale, #rotate{
+            /* width: 90%; */
+            margin: 40px;
+            float: left;
+        }
+
+        .origin{
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            margin: 40px;
+            cursor:pointer;
+        }
+        /* x축 y축 */
+        .movexy:hover{
+            transform: translate(100%, 100%) scale(1.8);
+        }
+        .move:hover{
+            transform: translateX(30px);
+        }
+        .movey:hover{
+            transform: translateY(-30px);
+        }
+
+        /* 크기조절 */
+        .scale1:hover{
+            transform: scale(0.8);
+        }
+        .scale2:hover{
+            transform: scale(1.8);
+        }
+        .scale3:hover{
+            transform: scale(-0.8);
+        }
+        /* 회전 */
+        .rotate1:hover{
+            transform: rotate(20deg);
+        }
+        .rotate2:hover{
+            transform: rotate(-20deg);
+        }
+    </style>
+</head>
+<body>
+   <div id="wrap" class="clearfix">
+        <div id="translate">
+            <!-- x축 y축 이동 -->
+            <div class="origin">
+                <div class="movexy">
+                    <img src="./images/pexels-dominika-roseclay-8290780.jpg" alt="꽃무늬마스크">
+                </div>
+            </div>
+            <div class="origin">
+                <div class="move">
+                    <img src="./images/pexels-dominika-roseclay-8290780.jpg" alt="꽃무늬마스크">
+                </div>
+            </div>
+            <div class="origin">
+                <div class="movey">
+                    <img src="./images/pexels-dominika-roseclay-8290780.jpg" alt="꽃무늬마스크">
+                </div>
+            </div>
+        </div>
+        <!-- 크기변환 -->
+        <div id="scale">
+            <div class="origin">
+                <div class="scale1">
+                <img src="./images/pexels-dominika-roseclay-9525113.jpg" alt="꽃든여성">
+                </div>
+            </div>
+            <div class="origin">
+                <div class="scale2">
+                    <img src="./images/pexels-dominika-roseclay-9525113.jpg" alt="꽃든여성">
+                </div>
+            </div>
+            <div class="origin">
+                <div class="scale3">
+                    <img src="./images/pexels-dominika-roseclay-9525113.jpg" alt="꽃든여성">
+                    </div>
+            </div>
+        </div>
+    
+        <!-- 회전 -->
+    
+        <div id="rotate">
+            <div class="origin">
+                <div class="rotate1">
+                    <img src="./images/pexels-dominika-roseclay-6792363.jpg" alt="눈">
+                </div>
+            </div>
+            <div class="origin">
+                <div class="rotate2">
+                    <img src="./images/pexels-dominika-roseclay-6792363.jpg" alt="눈">
+                </div>
+            </div>
+        </div>
+   </div>
+</body>
+</html>

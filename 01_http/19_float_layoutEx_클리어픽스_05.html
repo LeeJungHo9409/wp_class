@@ -36,11 +36,7 @@
             float: right;
         }
 
-        header{
-            content: "";
-            display: block;
-            clear: both;
-        }
+        /* 플롯해제 */
 
         article>.slide_l{
             width: 50%;
@@ -78,7 +74,7 @@
 
 <body>
     <div id="warp">
-        <header>
+        <header class="clearfix">
             <h1 class="log">
                 로고영역
             </h1>
@@ -86,7 +82,7 @@
                 GNB영역
             </nav>
         </header>
-        <article>
+        <article class="clearfix">
             <div class="slide_l">
                 슬라이드 왼쪽
             </div>
@@ -94,7 +90,7 @@
                 슬라이드 오른쪽
             </div>
         </article>
-        <section id="content">
+        <section id="content" class="clearfixs">
             <div class="section_l">
                 세션 왼쪽
             </div>

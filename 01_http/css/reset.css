@@ -25,3 +25,16 @@ h1,h2,h3,h4,h5,h6{
 img{
     vertical-align: top;
 }
+
+/* 플롯해제 클래스 */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+/* 너비값 지정 클래스 /safe zon */
+.w1440{
+    width: 1440px;
+    margin: 0 auto;
+}

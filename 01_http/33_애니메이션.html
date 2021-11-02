@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        /* prefix 필요 */
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* 이름 */
+            animation-name: chg_bg;
+            /* 실행시간 */
+            animation-duration: 3s;
+            /* 되감는 방향 */
+            animation-direction: alternate;
+            /* 반복횟수 */
+            animation-iteration-count: infinite;
+        }
+
+        #box2{
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            animation: chg_box 3s infinite alternate;
+        }
+        /* 키프레임 설정 */
+        @keyframes chg_bg{
+            from {
+                background-color: purple;
+                border: 1px solid black
+            }
+            to {
+                background-color: green;
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes chg_box{
+            /* 0%{}
+            25%{}
+            50%{}
+            75%{}
+            100%{} */
+            from {
+                /* background-color: indianred; */
+            }
+            to {
+                background-color: palegreen;
+                transform: rotate(50deg);
+            }
+        }
+
+        #box1{
+            margin: 50px;
+            background-color: greenyellow;
+        }
+
+        #box2{
+            background-color: plum;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+</body>
+</html>

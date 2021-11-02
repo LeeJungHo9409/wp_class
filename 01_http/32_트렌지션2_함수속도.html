@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜지션 함수속도</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #tr_speed{}
+
+        #tr_speed div{
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            background-color: #0f3;
+            font-weight: bold;
+            margin: 5px 10px;
+            /* padding: 5px; */
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+        /* prefix 필요 */
+        .linear{
+            transition: all 2s linear;
+        }
+        .ease{
+            transition: all 2s ease;
+        }
+        .ease-in{
+            transition: all 2s ease-in;
+        }
+        .ease-out{
+            transition: all 2s ease-out;
+        }
+        .ease-in-out{
+            transition: all 2s ease-in-out;
+        }
+
+        #tr_speed div{
+            float: left;
+        }
+        /* 효과시 중요선택자 */
+        #tr_speed:hover div{
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="tr_speed" class="clearfix">
+        <div class="linear">linear</div>
+        <div class="ease">ease</div>
+        <div class="ease-in">ease-in</div>
+        <div class="ease-out">ease-out</div>
+        <div class="ease-in-out">ease-in-out</div>
+    </div>
+</body>
+</html>

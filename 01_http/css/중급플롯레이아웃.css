@@ -1,0 +1,84 @@
+#wrap{
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    /* background-color: #ccc; */
+}
+
+/* 헤더 */
+#wrap #cover header{
+    background-color: gray;
+    height: 20%;
+}
+#wrap #cover header #pro_menu ul{
+    /* border: 1px solid white; */
+    float: right;
+}
+#wrap #cover header #pro_menu ul li{
+    margin: 10px;
+    float: left;
+}
+/* 헤더 */
+
+/* section content01 */
+#wrap #cover #se_content01{
+    /* border: 1px solid black; */
+}
+#wrap #cover #se_content01 #main_menu #menu{
+    /* background-color: green; */
+    /* border: 1px solid black; */
+    float: right;
+}
+#wrap #cover #se_content01 #main_menu li{
+    font-size: 20px;
+    margin: 10px;
+    float: left;
+}
+/* section content01 */
+
+/* content01 */
+#wrap #cover section #content01{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+    background-color: #1f1;
+}
+/* content01 */
+
+/* content02 */
+#wrap #cover section{
+    
+}
+#wrap #cover section #content02 ul{
+    /* border: 1px solid black; */
+    height: 500px;
+    margin: 0 auto;
+}
+#wrap>#cover>section>#content02>ul>li{
+    width: 33%;
+    height: 200px;
+    float: left;
+}
+#wrap #cover section #content02 ul li{
+    background-color: darkslategray;
+    margin-top: 5px;
+}
+#wrap #cover section #content02 ul .center{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+/* content02 */
+
+#wrap #cover footer{
+    color: gray;
+    border-top: 1px solid gray;
+}
+#wrap #cover footer article{
+    /* background-color: honeydew; */
+}
+#wrap #cover footer article li{
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border-right: 1px solid black; */
+}

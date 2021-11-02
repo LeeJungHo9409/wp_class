@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트렌지션 transition</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        /* 트렌지션 원본 박스 */
+        .tran{
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+            border:2px solid black;
+            cursor: pointer;
+
+            /* 접두어 prefix 필요 */
+            /* 트렌지션 속성 */
+            /* 트렌지션을 효과를 줄 css 속성명 */
+            transition-property: width, height, background-color;
+
+            /* 트렌지션 시간 */
+            transition-duration: 2s, 2s, 2s;
+
+            /* 한줄표기법 */
+            transition: all 2;
+        }
+        .tran:hover{
+            width: 200px;
+            height: 200px;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="tran">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+#wrap{
+    width: 100%;
+}
+/* Header */
+header{}
+/* Sub Menu */
+header .sub{
+    background-color: gray;
+}
+header .sub ul{
+    color: silver;
+    font-size: 12px;
+    line-height: 24px;
+}
+header .sub ul li{
+    float: right;
+    margin-left: 12px;
+}
+/* Gnb Menu */
+.gnb {}
+.gnb h1 {
+    float: left;
+}
+.gnb ul {
+    float: right;
+}
+.gnb ul li {
+    float: left;
+    margin-left: 10px;
+}
+.gnb ul li a {
+    color: black;
+    font-size: 14px;
+    line-height: 68px;
+}
+.gnb ul li a:hover {
+    color: cadetblue;
+}
+/* Artivle */
+.slide{
+    width: 100%;
+    height: 360px;
+    background-color: greenyellow;
+}
+/* Content (Section) */
+section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+section .box1, .box2, .box3, .box4, .box5, .box6{
+    width: 470px;
+    height: 165px;
+    background-color: darkslategrey;
+    
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+section .box3 .box6{
+    margin-right: 0;
+}
+
+section .box4, .box5, .box6{
+    margin-bottom: 0;
+}
+/* Footer */
+footer{
+    font-size: 12px;
+    color: gray;
+    padding: 12px;
+    border-top: 1px solid black;
+}
+
+footer p{
+    line-height: 1.5;
+}

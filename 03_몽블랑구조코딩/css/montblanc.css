@@ -152,3 +152,87 @@ header .img_deco button a{
     vertical-align: middle;
     margin-bottom: 5px;
 }
+
+/* Section ABOUT US*/
+.about_us{
+    padding: 100px 0 140px;
+}
+
+.about_us .about_us_text{
+    color:#807f7f;
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 1.5;
+}
+
+.about_us .lin{
+    width: 110px;
+    height: 5px;
+    border-bottom: 1px solid #fc3;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+/* Article Movie */
+.mov{
+    width: 1920px;
+    height: 560px;
+    background: url("../image/video_back.jpg") no-repeat center;
+    background-size: cover;
+    
+    /* position 기준값 */
+    position: relative;
+    /* margin-bottom: 60px; */
+}
+
+.mov .video{
+    
+}
+
+.mov .video #mont_video{
+    width: 1060px;
+    height: 560px;
+
+    /* position */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+
+    transform: translateX(-530px);
+}
+
+#mont_btn{
+    border: none;
+    background: none;
+    outline: none;
+
+    /* 포지션 */
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    z-index: 999;
+    transform: translateX(-50%);
+}
+#mont_btn i{
+    font-size: 96px;
+    color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+#mont_btn i:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
+.why{
+    padding-top: calc(280px + 100px);
+    padding-bottom: 160px;
+}
+
+/* Section FAQ */
+.faq{
+    background-color: #dcdcdc;
+    padding: 70px 0 130px;
+}
+
+.banner{
+    background-color: #fc3;
+}

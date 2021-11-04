@@ -1,0 +1,14 @@
+홈페이지
+ljh9409
+
+ftp
+lhadmin
+비번
+이름,!,생년월일
+
+도메인
+lhadmin.dothome.co.kr
+
+파일질라
+https://filezilla-project.org/
+왼쪽꺼

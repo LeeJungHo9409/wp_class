@@ -236,3 +236,122 @@ header .img_deco button a{
 .banner{
     background-color: #fc3;
 }
+
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    padding-top: 100px;
+}
+
+/* logo, sns Area */
+footer .footer_log{
+    width: 510px;
+    /* float: left; */
+}
+footer .footer_log dt{
+    margin-bottom: 24px;
+}
+footer .footer_log dd{
+    font-size: 14px;
+    color: #e1e1e1;
+    line-height: 32px;
+    margin-bottom: 32px;
+}
+footer .footer_log .sns{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* footer service */
+footer .footer_services{
+    width: 330px;  
+    /* float: left; */
+}
+footer .footer_services dt{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+footer .footer_services dd{
+    font-size: 14px;
+    color: #c7c4c7;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+footer .footer_services dd a:hover{
+    color: tomato;
+}
+
+/* Footer Assistance */
+footer .footer_assistance{
+    width: 330px;
+    /* float: left; */
+}
+footer .footer_assistance dt{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+footer .footer_assistance dd{
+    font-size: 14px;
+    color: #c7c4c4;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+footer .footer_assistance dd a:hover{
+    color: tomato;
+}
+
+/* Footer About */
+footer .footer_about{
+    width: 110px;
+    /* float: left; */
+}
+
+footer .footer_about dt{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+footer .footer_about dd{
+    font-size: 14px;
+    color: #c7c4c4;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+footer .footer_about dd a:hover{
+    color: tomato;
+}
+
+/* Copyright */
+footer .footer_copyright{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 32px;
+}
+footer .footer_copyright .footer_copyright_line{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 32px;
+}
+
+/* 플롯레이아웃 */
+
+footer .footer_log, 
+footer .footer_services, 
+footer .footer_assistance,
+footer .footer_about{
+    float: left;
+}
+
+.footer_copyright{
+    clear: both;
+}
